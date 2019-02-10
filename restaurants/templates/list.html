@@ -6,5 +6,25 @@
     </head>
     <body>
 
+    	{% for fo in my_list %}
+        <ul>
+            <li>
+                <h1>{{fo.restaurant_name}}</h1>
+            </li>
+            <li>
+                <p>{{fo.food_type}}</p>
+            </li>
+        </ul><br>
+    {% endfor %}
+
+
+
+
+    <hr>
+
+
+    {{my_object.restaurant_name}}<br>
+    {{my_object.food_type}}
+
     </body>
 </html>
